@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="../index.html">
+          <img src="../img/tecnologia.png" alt="Logo de la página" />
+        </a>
+        <p class="text-logo">CASA TECH</p>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacto">
+        <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+        <form
+          class="form-contacto"
+          action="https://formspree.io/f/xaeyaaye"
+          method="POST"
+        >
+          <div class="grupo-input">
+            <label for="email"> Your email: </label>
+            <input id="email" type="email" name="email" />
+          </div>
+
+          <div class="grupo-input">
+            <label for="mensaje"> Your message: </label>
+            <textarea id="mensaje" name="message"></textarea>
+          </div>
+          <button class="btn bg-secondary text-light" type="submit">
+            SEND
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Sitio realizado por Stephanie Dominguez</p>
+      <nav>
+        <ul class="footer-list">
+          <li><img src="../img/logo-whatsapp.png" alt="Logo whatsapp" /></li>
+          <li><img src="../img/logo-instagram.png" alt="Logo instagram" /></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

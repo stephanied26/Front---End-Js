@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ecedf1;
+  color: #272e36;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(52, 50, 53, 0.5);
+}
+
+header,
+footer {
+  background: #e0e3e7;
+  color: #191d1c;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
+}
+
+footer {
+  padding: 1rem 4rem;
+  justify-content: space-around;
+}
+
+.div-logo {
+  margin-left: 3rem;
+  display: flex; /* Alinea el enlace/logo y el texto horizontalmente */
+  align-items: center; /* Centra verticalmente el texto respecto al logo */
+}
+
+.text-logo {
+  color: #000309;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000309;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinea los items de forma horizontal */
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-list img {
+  width: 3rem;
+  height: auto;
+}
+
+.div-logo img {
+  max-width: 5rem;
+  height: auto;
+  display: block;
+}
+
+.article p {
+  align-items: baseline;
+}
+
+.bg-primary {
+  background-color: #ededef;
+}
+
+.bg-secondary {
+  background-color: #1a1c1b;
+}
+
+.text-light {
+  color: #d9dddd;
+}
+
+.text-dark {
+  color: #2a1e35;
+}
+
+.text-secondary {
+  color: #222423;
+}
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inicio h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.precio {
+  color: #021817;
+  font-weight: bold;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e0e3e7;
+  width: 40rem;
+  border-radius: 2.5rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  text-align: center;
+  padding: 0 2rem; /* Evita que el texto toque los bordes laterales */
+}
+
+/* Controlar la imagen para que todas midan exactamente igual */
+.card img {
+  width: 100%;
+  height: 35rem; /* Define una altura fija idéntica para todas las fotos */
+  object-fit: cover; /* Recorta proporcionalmente la foto sin deformarla */
+}
+
+/* Agrupador de texto (título, descripción y precio) */
+.card-content {
+  flex-grow: 1; /* Ocupa el espacio disponible para empujar el botón abajo */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+/* Botón fijado al fondo de la tarjeta */
+.card .btn {
+  width: 100%;
+  margin-top: auto; /* Garantiza que siempre esté alineado en la base de la tarjeta */
+}
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-contacto {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #e0e3e7;
+  color: #2a1e35;
+
+  width: 100%;
+  max-width: 50rem;
+
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+
+  color: #2a1e35;
+  background-color: #f5f6f9;
+
+  border: 2px solid #14151c;
+  border-radius: 0.8rem;
+
+  outline: none;
+}
+
+.grupo-input textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  .header-nav,
+  .div-logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Las tarjetas pasan a ocupar el 100% del ancho disponible con un margen seguro */
+  .card {
+    width: 100%;
+    max-width: 35rem; /* Evita que crezcan demasiado en tablets */
+  }
+
+  /* Reduce un poco el tamaño de los títulos principales en pantallas medianas */
+  h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .parrafo {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+}
